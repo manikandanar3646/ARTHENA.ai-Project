@@ -231,6 +231,31 @@ Detailed internal architecture, orchestration mechanisms, algorithms, data struc
 
 ---
 
+>folder structure
+
+ARTHENA/
+│
+├── README.md
+│
+├── docs/
+│   ├── vision.md
+│   ├── features.md
+│   ├── roadmap.md
+│   └── product-overview.md
+│
+├── architecture/
+│   ├── high-level-architecture.png
+│   └── system-overview.png
+│
+├── screenshots/
+│   └── .gitkeep
+│
+├── demos/
+│   └── .gitkeep
+│
+├── LICENSE
+└── .gitignore
+
 # 🌐 Opportunity Ecosystem
 
 ARTHENA is intended to work with information from multiple employment sources and career-related systems where appropriate integrations are technically and legally supported.
