@@ -1,482 +1,343 @@
 # ARTHENA
 
-## AI Career Operating System + Voice-Controlled AI Career Agent
+### AI Career Operating System
 
-**ARTHENA** stands for:
+> **ARTIFICIAL RECRUITMENT & TALENT HIRING AND EMPLOYMENT NAVIGATION ASSISTANT**
 
-> **A**rtificial **R**ecruitment & **T**alent **H**iring, **E**mployment **N**avigation **A**ssistant
+ARTHENA is an AI-powered **Career Operating System** designed to bring job discovery, career intelligence, resume assistance, application management, interview preparation, and natural voice interaction into a unified career experience.
 
-ARTHENA is an AI-powered **Career Operating System** designed to help job seekers discover opportunities, evaluate job suitability, manage applications, improve resumes, prepare for interviews, and interact with their career workflow through natural language and voice.
-
-Instead of functioning as a simple job-search website, ARTHENA is designed as an **AI career agent** that can understand a user's career goals, maintain career context, recommend actions, and execute permitted workflows through a controlled and secure action layer.
+Instead of treating job searching as a collection of separate tasks, ARTHENA aims to provide a centralized intelligent environment where users can understand opportunities, evaluate career decisions, improve their professional profile, and manage their career journey more effectively.
 
 ---
 
-## 🚀 Vision
+## 🌟 Vision
 
-The vision of ARTHENA is to create an intelligent personal career assistant that can continuously help a user throughout their job-search journey.
+The vision of ARTHENA is to evolve the traditional job-search experience into an **intelligent, personalized, and continuously assistive career platform**.
 
-### ARTHENA aims to help users:
+ARTHENA is being designed around the idea that an AI career assistant should understand more than an individual job listing.
 
-* 🔎 Discover relevant job opportunities
-* 🎯 Match jobs with their skills and career goals
-* 📄 Analyze and optimize resumes
-* 🧠 Identify skill gaps
-* 📝 Assist with job applications
-* 🎤 Prepare for interviews
-* 📊 Track applications and recruitment progress
-* 🔔 Monitor relevant opportunities
-* 🗣️ Interact using natural language and voice
-* 🤖 Automate permitted career workflows
-
----
-
-## 🧠 Core Concept
-
-ARTHENA follows an AI-agent architecture:
+It should understand the **user's broader career context**.
 
 ```text
-User
-  ↓
-Voice / Text Input
-  ↓
-Speech-to-Text
-  ↓
-Natural Language Understanding
-  ↓
-Intent Detection
-  ↓
-Context & Career Memory
-  ↓
-AI Decision / Action Planning
-  ↓
-Permission & Safety Validation
-  ↓
-Tool / Browser / API Actions
-  ↓
-Action Result
-  ↓
-LLM Response
-  ↓
-Text-to-Speech
-  ↓
-User
+Career Profile
+      ↓
+Career Goals
+      ↓
+Opportunities
+      ↓
+Intelligent Assistance
+      ↓
+Career Decisions
+      ↓
+Professional Growth
 ```
-
-### Important Design Principle
-
-The AI model should **not directly control external websites or the browser**.
-
-All potentially sensitive actions should pass through:
-
-```text
-AI
- ↓
-Action Planner
- ↓
-Permission Layer
- ↓
-Validation
- ↓
-Approved Tool
- ↓
-External System
-```
-
-This architecture helps provide better control, security, transparency, and reliability.
 
 ---
 
-# ✨ Planned Features
+# 🎯 What ARTHENA Aims to Solve
 
-## 1. AI Job Discovery
+Modern job seekers often need to use multiple disconnected tools for different parts of their career journey.
 
-ARTHENA can search for relevant employment opportunities based on:
+For example:
 
-* Job role
+* Finding suitable jobs
+* Understanding job requirements
+* Comparing opportunities
+* Maintaining resumes
+* Preparing for interviews
+* Tracking applications
+* Identifying missing skills
+* Planning career development
+
+ARTHENA aims to bring these experiences together through an AI-assisted career environment.
+
+---
+
+# ✨ Core Capabilities
+
+## 🔎 Intelligent Job Discovery
+
+Discover employment opportunities based on a user's:
+
+* Career interests
 * Skills
 * Experience
-* Location
-* Salary
-* Employment type
-* Technology stack
-* Company
-* Remote / hybrid / onsite preference
-
-Example:
-
-> "Find fresher .NET developer jobs in Chennai."
-
-ARTHENA can interpret the request and generate an appropriate job-search workflow.
-
----
-
-## 2. Intelligent Job Matching
-
-ARTHENA evaluates how well a job matches the user's profile.
-
-Possible matching factors:
-
-* Technical skills
-* Programming languages
-* Frameworks
-* Experience
-* Education
-* Location
-* Job requirements
-* Preferred role
-* Salary
+* Location preferences
+* Job preferences
+* Technology interests
 * Career goals
 
-Example:
-
-```text
-Job Match Score: 87%
-
-Strong Matches:
-✓ C#
-✓ ASP.NET Core
-✓ SQL
-✓ React
-
-Missing / Weak:
-△ Azure
-△ Docker
-
-Recommendation:
-Apply
-```
+The goal is to reduce the amount of time users spend searching through irrelevant opportunities.
 
 ---
 
-## 3. Resume Intelligence
+## 🎯 Personalized Job Matching
 
-ARTHENA is designed to analyze resumes and provide:
+ARTHENA is designed to help users understand how relevant a particular opportunity is to their professional profile.
 
-* Resume scoring
-* Skill extraction
-* Job-specific resume optimization
-* ATS-oriented suggestions
-* Missing keyword detection
-* Experience analysis
-* Project recommendations
+Potential considerations include:
 
----
+* Technical skills
+* Experience
+* Education
+* Role requirements
+* Location
+* Career preferences
+* Job expectations
 
-## 4. AI Career Assistant
-
-Users can interact with ARTHENA using natural language.
-
-Examples:
-
-> "What jobs should I apply for today?"
-
-> "Find .NET developer jobs for freshers."
-
-> "Why am I not matching this job?"
-
-> "Improve my resume for this position."
-
-> "What skills should I learn for this role?"
-
-> "Prepare me for a .NET interview."
+Rather than simply displaying job listings, ARTHENA aims to provide **context around job relevance**.
 
 ---
 
-## 5. Voice-Controlled Career Agent
+## 📄 Resume Intelligence
 
-ARTHENA is designed to support voice interaction.
+ARTHENA includes a planned resume intelligence layer designed to assist users with their professional documents.
 
-Example:
-
-```text
-User:
-"ARTHENA, find five suitable backend developer
-jobs in Chennai."
-
-ARTHENA:
-"I found 12 matching opportunities.
-Five have been shortlisted based on your profile."
-```
-
-The voice pipeline is planned around:
-
-```text
-Microphone
-   ↓
-Speech-to-Text
-   ↓
-Intent Recognition
-   ↓
-Career Context
-   ↓
-Action Planning
-   ↓
-Permission Validation
-   ↓
-Tool Execution
-   ↓
-Response Generation
-   ↓
-Text-to-Speech
-```
-
----
-
-# 🤖 AI Agent Architecture
-
-ARTHENA is designed around multiple logical AI capabilities.
-
-### Career Intelligence
-
-Responsible for:
-
-* Career analysis
-* Skill evaluation
-* Job matching
-* Career recommendations
-
-### Job Intelligence
-
-Responsible for:
-
-* Job discovery
-* Job parsing
-* Requirement extraction
-* Duplicate detection
-* Job ranking
-
-### Resume Intelligence
-
-Responsible for:
+Potential capabilities include:
 
 * Resume analysis
-* ATS optimization
-* Keyword matching
-* Resume recommendations
-
-### Interview Intelligence
-
-Responsible for:
-
-* Interview questions
-* Mock interviews
-* Technical preparation
-* Behavioral interview preparation
-* Answer evaluation
-
-### Voice Agent
-
-Responsible for:
-
-* Speech recognition
-* Intent understanding
-* Conversational interaction
-* Spoken responses
+* Skill identification
+* Job-specific recommendations
+* Keyword analysis
+* Resume improvement suggestions
+* Professional profile optimization
 
 ---
 
-# 🔐 Security & Permission Architecture
+## 🧠 Career Intelligence
 
-ARTHENA is designed with a controlled execution model.
+ARTHENA aims to provide personalized career assistance based on a user's profile and goals.
 
-The LLM should never be trusted to directly perform sensitive external actions.
+Examples include:
+
+* Career recommendations
+* Skill-gap identification
+* Role recommendations
+* Learning suggestions
+* Career-path exploration
+* Opportunity analysis
+
+---
+
+## 📝 Application Management
+
+ARTHENA is designed to help users organize and manage their job-search activities.
+
+Potential capabilities include:
+
+* Application tracking
+* Opportunity organization
+* Application status tracking
+* Follow-up reminders
+* Career activity history
+
+The platform is intended to keep the user's job-search journey organized in one place.
+
+---
+
+## 🎤 Voice-Based Career Interaction
+
+ARTHENA is being designed with natural voice interaction as part of its long-term vision.
+
+Users should be able to interact with their career assistant naturally rather than relying exclusively on traditional interfaces.
+
+Example:
+
+> **"Find suitable backend developer opportunities for me."**
+
+or
+
+> **"Help me prepare for my next technical interview."**
+
+Voice interaction is intended to make career assistance more natural and accessible.
+
+---
+
+## 🎯 Interview Preparation
+
+ARTHENA aims to provide AI-assisted interview preparation for different stages of the recruitment process.
+
+Potential capabilities include:
+
+* Technical interview preparation
+* Coding questions
+* Role-specific questions
+* Behavioral interview preparation
+* Mock interview experiences
+* Answer improvement
+* Interview feedback
+
+---
+
+# 🧩 Career Platform Modules
+
+The public project is organized conceptually around several major areas:
 
 ```text
-                 ┌───────────────┐
-                 │      User     │
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │      LLM      │
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │ Action Planner│
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │   Permission  │
-                 │   & Validation│
-                 └───────┬───────┘
-                         │
-                    Approved?
-                    /       \
-                  Yes        No
-                   │          │
-                   ▼          ▼
-              Tool Action   Request
-                           Confirmation
+ARTHENA
+│
+├── Career Profile
+├── Job Discovery
+├── Job Intelligence
+├── Career Intelligence
+├── Resume Intelligence
+├── Application Management
+├── Interview Preparation
+├── Voice Interaction
+├── Notifications
+└── Career Analytics
 ```
 
-This architecture is particularly important for actions such as:
-
-* Submitting applications
-* Sending messages
-* Modifying profile information
-* Uploading documents
-* Interacting with external services
+> The public repository intentionally describes these modules at a high level. Detailed implementation architecture and proprietary internal workflows are maintained separately.
 
 ---
 
-# 🌐 Job Sources
+# 🏗️ High-Level System Concept
 
-ARTHENA is intended to work with multiple job sources where technically and legally permitted.
+ARTHENA is envisioned as a combination of:
 
-Potential sources include:
+```text
+                    ┌─────────────────┐
+                    │      USER       │
+                    └────────┬────────┘
+                             │
+                 ┌───────────┴───────────┐
+                 │                       │
+                 ▼                       ▼
+          Web Interface           Voice Interface
+                 │                       │
+                 └───────────┬───────────┘
+                             │
+                             ▼
+                   ┌──────────────────┐
+                   │ ARTHENA AI CORE  │
+                   └────────┬─────────┘
+                            │
+          ┌─────────────────┼─────────────────┐
+          │                 │                 │
+          ▼                 ▼                 ▼
+       Career            Job              Resume
+    Intelligence     Intelligence      Intelligence
+          │                 │                 │
+          └─────────────────┼─────────────────┘
+                            │
+                            ▼
+                    Career Experience
+```
 
-* Company career pages
-* LinkedIn
-* Naukri
-* Indeed
-* Foundit
-* Hirist
-* Other supported recruitment platforms
+This diagram represents the **conceptual architecture only**.
 
-The system should respect:
+Detailed internal architecture, orchestration mechanisms, algorithms, data structures, and implementation decisions are intentionally not published in this repository.
 
-* Terms of service
-* APIs
-* robots.txt
+---
+
+# 🌐 Opportunity Ecosystem
+
+ARTHENA is intended to work with information from multiple employment sources and career-related systems where appropriate integrations are technically and legally supported.
+
+Potential sources may include:
+
+* Company career portals
+* Professional networking platforms
+* Job-search platforms
+* Recruitment platforms
+* Other supported employment services
+
+ARTHENA's development will take into consideration:
+
+* Platform terms of service
+* API policies
 * Authentication requirements
-* Rate limits
-* Anti-bot protections
-* User permissions
+* Rate limitations
+* Robots policies
+* Privacy requirements
+* Anti-automation protections
 
 ---
 
-# ⚙️ Technology Stack
+# 🛡️ Responsible AI & User Control
 
-## Backend
+Career decisions can have significant consequences.
+
+ARTHENA is therefore being designed around principles such as:
+
+### User Control
+
+Users should remain in control of important career decisions.
+
+### Transparency
+
+AI-generated recommendations should provide understandable context where appropriate.
+
+### Privacy
+
+Career information and personal data should be handled responsibly.
+
+### Controlled Actions
+
+Potentially sensitive actions should be subject to appropriate validation and user permissions.
+
+### Responsible Automation
+
+Automation should operate within applicable platform rules and user-defined permissions.
+
+---
+
+# 💻 Technology Direction
+
+ARTHENA is being developed around a modern full-stack and AI technology ecosystem.
+
+### Backend
 
 * C#
 * .NET
-* ASP.NET Core Web API
+* ASP.NET Core
 * Entity Framework Core
-* REST APIs
-* SignalR
-* Background Services
 
-## Frontend
+### Frontend
 
 * React
 * JavaScript
 * HTML
 * CSS
 
-## Database
+### Data
 
 * PostgreSQL
 
-## AI / LLM
+### AI
 
-* OpenAI API
 * Large Language Models
-* NLP
-* Embeddings
-* Retrieval-Augmented Generation (planned)
+* Natural Language Processing
+* Generative AI
+* AI-assisted decision support
 
-## Browser Automation
+### Development & Engineering
 
-* Playwright for .NET
-
-## Authentication
-
-* ASP.NET Core Identity
-* JWT Authentication
-
-## Background Processing
-
-* Hosted Services
-* Hangfire
-
-## Development Tools
-
-* Visual Studio
-* VS Code
 * Git
 * GitHub
 * Docker
-* Postman
+* REST APIs
 * Swagger / OpenAPI
+* Automated testing
 
-## Testing
-
-* xUnit
-* Integration Testing
-* API Testing
+> Technology choices may evolve during development as the platform architecture matures.
 
 ---
 
-# 🏗️ High-Level Architecture
+# 📊 Product Areas
 
-```text
-                    ARTHENA
-                       │
-        ┌──────────────┼──────────────┐
-        │              │              │
-        ▼              ▼              ▼
-   Web Interface   Voice Interface  APIs
-        │              │
-        └───────┬──────┘
-                ▼
-        ┌─────────────────┐
-        │ Career Assistant│
-        └────────┬────────┘
-                 │
-        ┌────────┴────────┐
-        │                 │
-        ▼                 ▼
-  AI Intelligence    Action Planner
-        │                 │
-        │                 ▼
-        │          Permission Layer
-        │                 │
-        └────────┬────────┘
-                 ▼
-          Tool Integration
-                 │
-       ┌─────────┼─────────┐
-       ▼         ▼         ▼
-     Jobs      Resume    Interview
-       │
-       ▼
-  External Sources
-
-                 │
-                 ▼
-             PostgreSQL
-```
-
----
-
-# 📦 Planned Modules
-
-```text
-ARTHENA
-│
-├── Authentication
-├── User Profile
-├── Career Profile
-├── Resume Management
-├── Job Discovery
-├── Job Matching
-├── Job Tracking
-├── Application Management
-├── AI Career Assistant
-├── Voice Agent
-├── Resume Intelligence
-├── Interview Preparation
-├── Skill Gap Analysis
-├── Notifications
-├── Browser Automation
-├── AI Memory
-├── Analytics
-└── Administration
-```
+| Area                   | Purpose                                                 |
+| ---------------------- | ------------------------------------------------------- |
+| Career Profile         | Understand the user's professional background and goals |
+| Job Discovery          | Help discover relevant opportunities                    |
+| Job Intelligence       | Provide context around opportunities                    |
+| Career Intelligence    | Assist with career-related decisions                    |
+| Resume Intelligence    | Improve professional documents                          |
+| Application Management | Organize job-search activities                          |
+| Interview Preparation  | Prepare users for recruitment processes                 |
+| Voice Interaction      | Enable natural career conversations                     |
+| Career Analytics       | Understand career-search activity and progress          |
 
 ---
 
@@ -484,183 +345,154 @@ ARTHENA
 
 ## Phase 1 — Foundation
 
-* [ ] Repository setup
-* [ ] Solution architecture
-* [ ] ASP.NET Core API
-* [ ] PostgreSQL integration
-* [ ] Entity Framework Core
-* [ ] Authentication
-* [ ] User profile
+* [ ] Project foundation
+* [ ] Core application structure
+* [ ] User experience foundation
+* [ ] Career profile
+* [ ] Initial data layer
 
-## Phase 2 — Job Intelligence
+## Phase 2 — Job Experience
 
-* [ ] Job data model
-* [ ] Job ingestion
-* [ ] Job parsing
-* [ ] Job normalization
-* [ ] Duplicate detection
+* [ ] Job discovery
 * [ ] Job search
 * [ ] Job filtering
-* [ ] Job ranking
+* [ ] Opportunity organization
+* [ ] Job relevance assistance
 
-## Phase 3 — AI Career Intelligence
+## Phase 3 — Career Intelligence
 
-* [ ] LLM integration
-* [ ] Career profile analysis
-* [ ] Job matching
-* [ ] Skill extraction
-* [ ] Skill-gap analysis
-* [ ] AI recommendations
+* [ ] AI career assistant
+* [ ] Career recommendations
+* [ ] Skill analysis
+* [ ] Skill-gap assistance
+* [ ] Career insights
 
 ## Phase 4 — Resume Intelligence
 
-* [ ] Resume upload
-* [ ] Resume parsing
+* [ ] Resume management
 * [ ] Resume analysis
-* [ ] ATS analysis
-* [ ] Job-specific optimization
+* [ ] Job-specific recommendations
+* [ ] Professional profile assistance
 
-## Phase 5 — Voice Agent
+## Phase 5 — Application Management
 
-* [ ] Speech-to-text
-* [ ] Intent detection
-* [ ] Voice command processing
-* [ ] Context management
-* [ ] Text-to-speech
-* [ ] Conversational career assistant
+* [ ] Application tracking
+* [ ] Application history
+* [ ] Status management
+* [ ] Notifications
+* [ ] Career activity tracking
 
-## Phase 6 — Controlled Automation
+## Phase 6 — Interview Intelligence
 
-* [ ] Action planner
-* [ ] Permission system
-* [ ] Playwright integration
-* [ ] Browser workflow engine
-* [ ] Assisted application mode
-* [ ] User-approved automation
+* [ ] Interview preparation
+* [ ] Role-specific questions
+* [ ] Technical preparation
+* [ ] Behavioral preparation
+* [ ] AI-assisted mock interviews
 
-## Phase 7 — Production Readiness
+## Phase 7 — Voice Experience
 
-* [ ] Logging
-* [ ] Monitoring
-* [ ] Error handling
-* [ ] Rate limiting
+* [ ] Voice interaction
+* [ ] Natural language commands
+* [ ] Conversational career assistance
+* [ ] Spoken responses
+
+## Phase 8 — Production Evolution
+
 * [ ] Security hardening
-* [ ] Automated testing
-* [ ] Docker deployment
-* [ ] CI/CD
-* [ ] Cloud deployment
+* [ ] Performance optimization
+* [ ] Observability
+* [ ] Testing
+* [ ] Deployment
+* [ ] Scalability
+* [ ] Reliability improvements
 
 ---
 
-# 🔄 Application Modes
+# 🖼️ Product Showcase
 
-### Assisted Mode
+Screenshots, UI demonstrations, architecture illustrations, and product videos will be added as ARTHENA progresses.
 
-ARTHENA prepares the application and asks the user before important actions.
-
-```text
-Find Job
-   ↓
-Analyze Job
-   ↓
-Prepare Application
-   ↓
-User Review
-   ↓
-User Approval
-   ↓
-Submit
-```
-
-### Autonomous Mode
-
-The user defines explicit rules that allow ARTHENA to perform approved actions automatically.
+### Planned Showcase
 
 ```text
-User Rules
-   ↓
-Job Discovery
-   ↓
-Matching
-   ↓
-Validation
-   ↓
-Approved Action
-   ↓
-Execution
-   ↓
-Log Result
+📁 screenshots/
+📁 diagrams/
+📁 demos/
+📁 documentation/
 ```
 
 ---
 
-# 📊 Example Career Workflow
+# 📚 Documentation
+
+Public documentation will focus on:
+
+* Product vision
+* User experience
+* Major capabilities
+* High-level architecture
+* Development progress
+* Technology direction
+
+Detailed implementation documentation is intentionally not included in this public repository.
+
+---
+
+# 🔒 Intellectual Property & Project Scope
+
+ARTHENA is being developed as a potential commercial product.
+
+This public repository is primarily intended to document the project's **vision, capabilities, progress, and high-level technical direction**.
+
+Proprietary implementation details, internal algorithms, detailed architecture, prompts, business logic, private integrations, and production infrastructure are not included.
+
+---
+
+# 🚧 Project Status
+
+**ARTHENA is currently under active development.**
+
+The project is evolving from its initial foundation toward a production-oriented AI Career Operating System.
+
+Features, architecture, technology choices, and product direction may change throughout development.
+
+---
+
+# 🤝 Contributions
+
+At the current stage, ARTHENA is primarily developed as an independent product project.
+
+Contribution guidelines may be introduced in the future if selected parts of the project become open for community participation.
+
+---
+
+# 📜 License
+
+License information will be provided according to the project's release strategy.
+
+---
+
+# 🌟 Project Vision
+
+ARTHENA aims to move beyond the traditional concept of a job-search application.
+
+The long-term vision is to create an intelligent career environment that can assist users across the broader employment lifecycle:
 
 ```text
-User Profile
-     ↓
-Career Goals
-     ↓
-Job Discovery
-     ↓
-Job Filtering
-     ↓
-AI Job Matching
-     ↓
-Top Opportunities
-     ↓
-Resume Matching
-     ↓
-Application Preparation
-     ↓
-User Approval
-     ↓
-Application
-     ↓
-Application Tracking
-     ↓
-Interview Preparation
-     ↓
-Career Feedback
+Discover
+   ↓
+Understand
+   ↓
+Prepare
+   ↓
+Apply
+   ↓
+Interview
+   ↓
+Improve
+   ↓
+Grow
 ```
 
----
-
-# 🎯 Long-Term Goal
-
-ARTHENA is intended to evolve from a traditional job-search application into a complete **AI Career Operating System**.
-
-The long-term vision includes:
-
-* Continuous job discovery
-* Personalized career intelligence
-* AI-powered career planning
-* Resume intelligence
-* Interview coaching
-* Voice-controlled interaction
-* Application workflow management
-* Skill development recommendations
-* Career analytics
-* Controlled autonomous career workflows
-
----
-
-# ⚠️ Project Status
-
-> 🚧 **ARTHENA is currently under active development.**
-
-The architecture, modules, and features may change as the project evolves from prototype to production-style implementation.
-
----
-
-# 📄 License
-
-License information will be added as the project reaches its initial public release.
-
----
-
-## 👨‍💻 Project
-
-**ARTHENA — AI Career Operating System**
-
-Built with **C#, .NET, PostgreSQL, React, and AI technologies**.
+**ARTHENA — Your AI-powered career operating system.**
