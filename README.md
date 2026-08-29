@@ -231,8 +231,13 @@ Detailed internal architecture, orchestration mechanisms, algorithms, data struc
 
 ---
 
->folder structure
+# 📁 Repository Structure
 
+This repository is the **public documentation and project showcase for ARTHENA**.
+
+The actual ARTHENA application and its implementation are maintained separately. This repository is intended to provide a high-level overview of the project, its vision, capabilities, architecture concepts, development roadmap, and selected demonstrations.
+
+```text
 ARTHENA/
 │
 ├── README.md
@@ -255,6 +260,21 @@ ARTHENA/
 │
 ├── LICENSE
 └── .gitignore
+```
+
+### Directory Overview
+
+| Directory / File | Purpose                                                             |
+| ---------------- | ------------------------------------------------------------------- |
+| `README.md`      | Public overview of ARTHENA                                          |
+| `docs/`          | Product vision, capabilities, roadmap, and high-level documentation |
+| `architecture/`  | Selected high-level architecture and system diagrams                |
+| `screenshots/`   | Selected product screenshots and UI demonstrations                  |
+| `demos/`         | Publicly shareable demonstration materials                          |
+| `LICENSE`        | Repository licensing information                                    |
+| `.gitignore`     | Files and directories excluded from version control                 |
+
+> **Note:** This repository is a **documentation and showcase repository for the ARTHENA project**. It does not contain the complete application source code or proprietary implementation. Detailed engineering documentation, internal architecture, source code, algorithms, AI workflows, business logic, and other implementation-specific components are maintained separately.
 
 # 🌐 Opportunity Ecosystem
 
